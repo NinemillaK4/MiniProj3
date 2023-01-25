@@ -1,4 +1,4 @@
-# MiniProj2
+# MiniProj3
 
 require: 
 npm install 
@@ -6,7 +6,7 @@ npm install
 
 servidor:
 backend 
-npm start
+node app.js
 
 fronend 
 npm run serve
