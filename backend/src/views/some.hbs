@@ -1,0 +1,18 @@
+{{# each contents }}
+<tr>
+   <td>{{ this.id }}</td>
+   <td>{{ this.name }}</td>
+   <td>{{ this.email }}</td>
+   <td>{{ this.nationality }}</td>
+   <td>{{ this.company }}</td>
+   
+   <td>
+      <a href="update-form" class="btn border-shadow update"> 
+        <span class="text-gradient"><i class="fa fa-pencil" style="color:blue; font-size:20px;"></i></span>
+      </a>
+      <a href="#" class="btn border-shadow update">
+        <span class="text-gradient"><i class="fa fa-trash" style="color:red; font-size:20px;"></i></span>
+      </a>
+    </td>
+</tr>
+{{/each}}

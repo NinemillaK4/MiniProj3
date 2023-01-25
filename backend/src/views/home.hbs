@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+         *{
+            font-family: 'Montserrat', sans-serif;
+         }
+
+        html {
+            background-color: #2b589f;
+            color: {{style.text_color}};
+            position: relative;
+            height: 100vh;
+        }
+
+        body {
+            background-color: #2b589f;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        img {
+            width: 350px;
+        }
+
+        table{
+            border-spacing: 0px;
+            with:50%;
+        }
+
+        .table td, .table th{
+            padding: .75em;
+            vertical-align:top;
+            text-align:center;
+            border-top: 1px solid var(--border);
+        }
+
+        td{
+            background-color: #a3c3e3;
+        }
+
+        table. td>a.btn{
+            padding: .3em 1em;
+            font-size: 1.1em;
+            margin: 2em;
+        }
+
+        a{
+            font-size:1em;
+            padding:.0em 0em;
+        }
+        @media only screen and (max-width: 1024px){
+            table, thead, tbody, th, td, tr{
+                display: block;
+            }
+
+            thead tr{
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr{
+                border:1px solid var(--border);
+            }
+
+            td{
+                border: none;
+                position: relative;
+            }
+
+            
+
+        }
+
+
+</style>
+</head>
+
+<body>
+    <br><br>
+<center><h1>Animalec<img src="./assets/images/logo.png" alt="Animalec" style=" width:100px;
+  height:100px;"></h1>  <p style="color: #FFFFFF">API do Livro da FCA "Desenvolvimento Avançado para a Web"</p> <br></center>
+
+ <div class="row">
+  &emsp;<div class="column">
+    <a class="btn btn-dark"  style="height:35px; " href="add-sponsor" role="button"><i class="fa fa-plus"> </i> Sponsor</a> 
+       <br>
+       
+       <table class="table">
+           <thead class="thead-light">
+              <tr>
+                  <th>
+                      Name
+                  </th> 
+                  <th>
+                      Email
+                  </th> 
+                  <th>
+                      Nacionality
+                  </th> 
+                  <th>
+                      Company
+                  </th> 
+                  <th> 
+                    Action
+                  </th>
+              </tr> 
+           </thead>
+           <tbody>
+            {{> some}}
+            </tbody>
+        </table>
+       
+    </div>
+
+    </div>
+ 
+  <div class="column">
+    <a class="btn btn-dark" style="height:35px;" href="add-expert" role="button"><i class="fa fa-plus"> </i> Expert</a> 
+    
+       <br><table class="table">
+           <thead class="thead-light">
+              <tr>
+                
+                  <th>
+                      Name
+                  </th> 
+                  <th>
+                      Email
+                  </th> 
+                  <th>
+                      Nacionality
+                  </th> 
+                  <th>
+                      Ability
+                  </th> 
+                  <th> 
+                    Action
+                  </th>
+              </tr> 
+           </thead>
+           <tbody>
+            {{> som}}
+            </tbody>
+       </table> 
+
+  </div> 
+ </div>           
+
+</body>
+</html>
