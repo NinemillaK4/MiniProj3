@@ -7,11 +7,10 @@ npm install
 
 
 servidor:
-backend 
-node app.js
+backend/src/node app.js
 
 
 
-fronend 
+fronend/
 npm run serve
   
